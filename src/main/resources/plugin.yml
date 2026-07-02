@@ -1,0 +1,17 @@
+name: NanoChaseplate
+version: '1.0.0'
+main: com.example.nanochaseplate.NanoChaseplate
+api-version: '1.26'
+author: Claude
+description: Ajoute le Nano Chaseplate, un plateau permettant de voler indéfiniment, obtenable uniquement via /nanochase (OP).
+
+commands:
+  nanochase:
+    description: Donne le Nano Chaseplate au joueur (réservé aux OP).
+    usage: /nanochase [joueur]
+    permission: nanochaseplate.give
+
+permissions:
+  nanochaseplate.give:
+    description: Autorise à obtenir le Nano Chaseplate via /nanochase
+    default: op
